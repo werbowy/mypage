@@ -3,10 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Moja Strona</title>
+    <title>Cytat</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+        }
+        blockquote {
+            font-size: 24px;
+            font-style: italic;
+            border-left: 5px solid #3498db;
+            padding-left: 20px;
+            color: #333;
+            max-width: 600px;
+            margin: 20px auto;
+        }
+        cite {
+            display: block;
+            margin-top: 10px;
+            font-size: 18px;
+            color: #555;
+        }
+        .image-container {
+            border: 2px solid #3498db; /* Ramka wokół zdjęcia */
+            border-radius: 8px; /* Zaokrąglone rogi */
+            padding: 10px; /* Odstęp wewnętrzny */
+            display: inline-block; /* Sprawia, że ramka dostosowuje się do rozmiaru zdjęcia */
+            margin-top: 20px; /* Odstęp nad ramką */
+        }
+        img {
+            max-width: 200px; /* Maksymalna szerokość zdjęcia */
+            height: auto; /* Zachowaj proporcje */
+            border-radius: 4px; /* Zaokrąglone rogi zdjęcia */
+        }
+    </style>
 </head>
 <body>
-    <h1>Witaj na mojej stronie!</h1>
-    <p>To jest tekst na mojej stronie internetowej.</p>
+    <blockquote>
+        „Zwycięstwo należy do najbardziej wytrwałych.”
+        <cite>— Piotr Werbowy</cite>
+    </blockquote>
+    <div class="image-container">
+        <img src="https://scontent-waw2-2.xx.fbcdn.net/v/t39.30808-6/421956720_1557614111730018_2206782403024346872_n.jpg?stp=cp6_dst-jpg&_nc_cat=101&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=qotp5-ghtEkQ7kNvgH6MxDu&_nc_zt=23&_nc_ht=scontent-waw2-2.xx&_nc_gid=AJJl7Zk7nfcewEyAGGzZqdY&oh=00_AYC2OKDh1V9Y4t3HKY8uPJHMd1530-QXeJtDFqYe7eu5xw&oe=671B8EF1" alt="Opis zdjęcia">
+    </div>
 </body>
 </html>
